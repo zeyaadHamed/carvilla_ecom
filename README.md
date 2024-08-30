@@ -1,2 +1,2 @@
 # carvilla_ecom
-HTML_SCSS_TypeScript
+TypeScript_HTML_SCSS
