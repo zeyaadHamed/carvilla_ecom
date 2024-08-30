@@ -13,6 +13,7 @@
 body{ 
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
+    position: relative;
 }
 main {
     .home {
@@ -656,6 +657,24 @@ footer {
         }
     }
 }
+.arrow_up {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: var(--links-color);
+    z-index: 955;
+    bottom: 20px;
+    border-radius: 50%;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    span {
+        color: #fff;
+        animation: arrow-up 1s infinite ease-out;
+    }
+}
 
 @media (min-width: 834px) {
     main {
@@ -748,5 +767,13 @@ footer {
         }
         to{
             transform: translateX(10px);
+        }
+}
+@keyframes arrow-up {
+        from{
+            transform: translateY(0);
+        }
+        to{
+            transform: translateY(-5px);
         }
 }
